@@ -70,12 +70,27 @@ public class AlumnoServicio {
             String respuesta = entrada.next();
             if (respuesta.equals("si")) {
                 agregarAlumno(crearAlumno());
-            }else{
+            } else {
                 bandera = true;
             }
 
         }
 
     }
+    
+    public void notaFinal(){
+        
+        System.out.println("Ingrese el nombre del alumno: ");
+        String nombreBuscar = entrada.next();
+        for (Alumno aux : alumnos) {
+            if (aux.getNombre().equals(nombreBuscar)) {
+                aux.calcularNotaFinal();
+            }
+        }
+        
+    }
+    
+    
+    
 
 }

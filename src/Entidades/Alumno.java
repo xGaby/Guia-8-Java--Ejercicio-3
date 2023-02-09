@@ -48,7 +48,19 @@ public class Alumno {
     public String toString() {
         return "Alumno{" + "nombre=" + nombre + ", notas=" + notas + '}';
     }
-    
-    
+
+    public void calcularNotaFinal() {
+
+        int suma = 0;
+
+        for (Integer aux : notas) {
+            suma += aux;
+        }
+
+        float promedio = (float) suma / notas.size();
+
+        System.out.println("El promedio es de: " + promedio);
+
+    }
 
 }

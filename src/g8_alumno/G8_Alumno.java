@@ -26,6 +26,8 @@ public class G8_Alumno {
         
         s1.mostrarAlumnos();
         
+        s1.notaFinal();
+        
         //System.out.println(a1.getNotas().toString());
         
         
